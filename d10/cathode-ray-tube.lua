@@ -1,7 +1,6 @@
 
 function ParseInput(input)
 	local instructions = {}
-	-- local cyclesNum = 0
 	for line in io.lines(input) do
 		local intr = string.match(line, "(%l+)")
 		local val = string.match(line, "(-?%d+)$") or 0
